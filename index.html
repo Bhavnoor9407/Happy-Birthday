@@ -2,24 +2,43 @@
 <html lang="en">
 
 <head>
-    <title>Sorry</title>
+    <title>Happy Birthday</title>
     <link rel="icon" type="image/jpeg" href="favicon.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <div class="box">
     <span class="star">✨</span>
     <div id="texti"> It's Your Special Day! Yeyeyeyeyyeyey! </div>
     <div id="final"> Do you want to see what I made </div>
     <div class = "buttons">
-        <button id = "yes">Yess</button>
+        <button id = "yes" onclick="Finally()">Yess</button>
         <button id = "no" onclick = "Iloose()">Noo</button>
     </div>
     </div>
+    <div id="popup">
+        <div class = "popup-box">
+            <span>Noo kyoo dabaya..</span>
+            <img src="req.gif" class="please-gif">
+            <div class = "buttonns">
+                    <button onclick="closePopup()">Acha dekhti hoon </button>
+                    <button onclick="newPopup()">Nhi dekhungiii... </button>
+            </div>    
+        </div>
+    </div>
+    <div id="popup2">
+        <div class = "popup-box">
+            <span>Maan jaoo na..</span>
+            <img src="please.gif" class="please-gif">
+            <div class = "buttonns">
+                    <button onclick="closePopup2()">Acha dekhti hoon </button>
+            </div>    
+        </div>
+    </div>
 <script src="script.js"></script>
+<div id = "party"></div>
 </body>
 </html>
