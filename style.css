@@ -50,7 +50,7 @@ body {
     cursor: pointer;
 }
 #no {
-    position: relative;
+    position: fixed;
 }
 .buttonns {
     display: flex;
