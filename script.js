@@ -26,19 +26,25 @@ setInterval(() => {
     }, 500);
 
 }, 3000);
-function bhagooo(){
-    const btn = document.getElementById('no')
-    const x = Math.floor(Math.random()*300)+1
-    const y = Math.floor(Math.random()*300)+1
-    btn.style.top=x+"px"
-    btn.style.left=y+"px"
+function bhagooo() {
+
+    const btn = document.getElementById("no");
+
+    const maxX = window.innerWidth - btn.offsetWidth;
+    const maxY = window.innerHeight - btn.offsetHeight;
+
+    const x = Math.random() * maxX;
+    const y = Math.random() * maxY;
+
+    btn.style.left = x + "px";
+    btn.style.top = y + "px";
 }
 document.addEventListener("mousemove",(event) =>{
     const rect = nobtn.getBoundingClientRect();
     const btnX = rect.left + rect.width/2;
     const btnY = rect.top + rect.height/2;
     const distance = Math.sqrt((event.clientX-btnX)**2 + (event.clientY-btnY)**2)
-    if (distance<37){
+    if (distance<36){
         bhagooo();
     }
 });
