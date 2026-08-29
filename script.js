@@ -30,8 +30,10 @@ function bhagooo() {
 
     const btn = document.getElementById("no");
 
-    const maxX = window.innerWidth - btn.offsetWidth;
-    const maxY = window.innerHeight - btn.offsetHeight;
+    const padding = 20;
+
+    const maxX = window.innerWidth - btn.offsetWidth - padding;
+    const maxY = window.innerHeight - btn.offsetHeight - padding;
 
     const x = Math.random() * maxX;
     const y = Math.random() * maxY;
