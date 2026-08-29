@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFF0F5;
+}
+.box {
+    margin-top: 0px;
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.star {
+    margin-top: 0px;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+.text {
+    text-align: center;
+}
+#texti {
+    text-align: center;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+#texti.hide {
+    opacity: 0;
+    transform: translateY(-25px);
+}
+#final {
+    display: none;
+    text-align: center;
+}
+.buttons{
+    display: none;
+    font-size: 20px;
+    margin: 0px;    
+    gap: 80px;
+    justify-content: center;
+}
+.buttons button{
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#no {
+    position: relative;
+}
